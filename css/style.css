@@ -1,13 +1,101 @@
-body {
+@font-face {
+  font-family: "GothamPro Bold";
+
+  src: url("../fonts/GothaProBol.otf");
+}
+
+@font-face {
+  font-family: "GothamPro Light";
+
+  src: url("../fonts/GothaProLig.otf");
+}
+
+@font-face {
+  font-family: "GothamPro Light Italic";
+
+  src: url("../fonts/GothaProLigIta.otf");
+}
+
+body,
+html {
+  width: 100%;
+  min-width: 1100px;
+  height: 100%;
   margin: 0;
   padding: 0;
 
-  font-family: "Arial", sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "GothamPro Light", Arial, sans-serif;
+  color: #221f1f;
 }
 
-p {
-  width: 500px;
-  margin: 50px;
+.visually-hidden {
+  position: absolute;
 
-  font-size: 21px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+.intro-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  background: #793e62 url("../img/intro-background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.intro-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  box-sizing: border-box;
+  width: 222px;
+  height: 192px;
+  padding: 0 20px;
+
+  transform: translate(-50%,-50%);
+}
+
+.intro-logo {
+  display: block;
+  width: 161px;
+  height: 119px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding-right: 3px;
+}
+
+.btn-intro {
+  display: block;
+  padding: 12px 18px 8px;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "GothamPro Bold", Arial, sans-serif;
+  color: #ec1e79;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+
+  background-color: transparent;
+  border: 3px solid #ec1e79;
+}
+
+.btn-intro:hover {
+  color: #ffffff;
+
+  background-color: #ec1e79;
 }
