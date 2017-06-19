@@ -19,12 +19,11 @@
 body,
 html {
   width: 100%;
-  min-width: 1100px;
   height: 100%;
   margin: 0;
   padding: 0;
 
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   font-family: "GothamPro Light", Arial, sans-serif;
@@ -44,6 +43,8 @@ html {
 
   clip: rect(0, 0, 0, 0);
 }
+
+/*STYLES FOR INTRO.HMTML*/
 
 .intro-wrapper {
   position: relative;
@@ -98,4 +99,157 @@ html {
   color: #ffffff;
 
   background-color: #ec1e79;
+}
+
+/*STYLES FOR HEADER*/
+
+.main-header {
+  padding: 13px 20px 13px;
+
+  background-color: #27273e;
+}
+
+.container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.main-header .main-logo {
+  display: block;
+  float: left;
+  width: 99px;
+  height: 51px;
+}
+
+.main-header p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .contacts {
+  float: right;
+  margin-top: 6px;
+
+  font-family: "GothamPro Bold", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.main-header .contacts-phone {
+  margin-bottom: 5px;
+
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.contacts-schedule-wrapper {
+  position: relative;
+
+  font-size: 0;
+  line-height: 0;
+  text-align: right;
+}
+
+.main-header .contacts-schedule {
+  display: inline-block;
+  margin-right: 2px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #ec1e79;
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.main-header .contacts-schedule:hover {
+  color: #5dd1f8;
+
+  opacity: 0.7;
+}
+
+.contacts-schedule-hover {
+  position: absolute;
+  top: 37px;
+  right: 0;
+
+  display: none;
+  padding: 13px 10px 16px 11px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ec1e79;
+
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
+}
+
+.contacts-schedule-hover::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 2px;
+
+  width: 0;
+  height: 0;
+
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff #ffffff transparent transparent;
+  border-radius: 0 3px 5px 0;
+  box-shadow: 4px -4px 10px -4px rgba(23,59,117,0.55);
+  transform: rotate(-45deg);
+}
+
+.main-header .contacts-schedule:hover ~ .contacts-schedule-hover {
+  display: block;
+}
+
+.main-header .work-hours {
+  margin-bottom: 5px;
+}
+
+.main-header .lunch-hours {
+  font-family: "GothamPro Light", Arial, sans-serif;
+  text-align: left;
+  color: #221f1f;
+}
+
+/*STYLES FOR MAIN.HTML*/
+
+main {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation {
+  float: left;
+  width: 180px;
+}
+
+.info,
+.partners {
+  float: right;
+  width: 880px;
+}
+
+/*STYLES FOR PRICES.HTML*/
+
+/*STYLES FOR COMMENTS.HTML*/
+
+/*STYLES FOR FOOTER*/
+
+.main-footer {
+  clear: both;
+
+  background-color: #27273e;
 }
