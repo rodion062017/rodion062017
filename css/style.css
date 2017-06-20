@@ -250,6 +250,60 @@ main {
 
 .main-footer {
   clear: both;
+  padding: 10px 0 12px 0;
+
+  background-color: #27273e;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+.footer-copyright {
+  float: left;
+  width: 270px;
+  margin-right: 209px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-copyright a,
+.footer-copyright span {
+  font-family: "GothamPro Bold", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.main-footer .main-logo {
+  display: block;
+  float: left;
+  width: 99px;
+  height: 51px;
+  margin-top: 4px;
+}
+
+.footer-social {
+  float: right;
+  width: 180px;
+  margin-top: 6px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "GothamPro Bold", Arial, sans-serif;
+  text-align: right;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+::selection {
+  color: #ec1e79;
 
   background-color: #27273e;
 }
