@@ -242,9 +242,21 @@ main {
   width: 880px;
 }
 
-/*STYLES FOR PRICES.HTML*/
-
 /*STYLES FOR COMMENTS.HTML*/
+
+.breadcrumbs {
+  float: right;
+  width: 880px;
+  padding: 0;
+}
+
+.comments {
+  float: right;
+  width: 880px;
+}
+
+
+/*STYLES FOR PRICES.HTML*/
 
 /*STYLES FOR FOOTER*/
 
