@@ -3,144 +3,159 @@
   <head>
     <meta charset="utf-8">
     <title>Отзывы</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <img class="main-logo" src="img/main-logo.png" width="99" height="51" alt="Коворкинг «Воркадиум»">
-        <div class="contacts">
-          <p class="contacts-phone">8 (800) 00-392-10</p>
-          <div class="contacts-schedule-wrapper">
-            <p class="contacts-schedule">График работы</p>
-            <div class="contacts-schedule-hover">
-              <p class="work-hours">пн-вс: 09:00-20:00</p>
-              <p class="lunch-hours">обед: 14:00-14:30</p>
-            </div>
+    <header class="header">
+      <div class="header-wrapper  clearfix">
+        <a class="header__logo  logo" href="#"><img src="img/main-logo.png" alt="Коворкинг «Воркадиум»"></a>
+        <div class="header__contacts  contacts">
+          <a class="contacts__phone" href="tel:88000039210">8 (800) 00-392-10</a>          
+          <p class="contacts__schedule">График работы</p>
+          <div class="contacts__schedule-hover">
+            <p class="contacts__work-hours">пн-вс: 09:00-20:00</p>
+            <p class="contacts__lunch-hours">обед: 14:00-14:30</p>           
           </div>
         </div>
       </div>
     </header>
-    <main>      
-      <nav class="main-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="active" href="main.html">Главная</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="" href="prices.html">Тарифы</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="" href="comments.html">Отзывы</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="breadcrumbs">
-        <ul class="breadcrumbs-list">
-          <li><a href="main.html">Главная</a></li>
-          <li><a class="active" href="">Отзывы</a></li>
-        </ul>
-      </nav>
-      <section class="comments">
-        <h1 class="comments-title">Отзывы</h1>
-        <ul class="comments-list">
-          <li class="comments-list-item">
-            <div class="comment-photo">
-              <img src="img/profile-photos/photo-1.jpg" width="160" height="160" alt="Фото Олега Павлова">
-            </div>
-            <time class="comment-date" datetime="2016-10-12">12.10.2016</time>
-            <h2 class="comment-author">Олег Павлов</h2>
-            <p class="comment-text">Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим совещания директоров. Получается намного дешевле и удобно всем добираться. Единственное пожелание – расширить меню, потому что бизнес-ланчи – это все таки средний уровень, а хочется чего то более вкусного, чтобы можно было угощать начальство.</p>
-          </li>
-          <li class="comments-list-item">
-            <div class="comment-avatar">
-              <img photo"comment-avatar" src="img/profile-photos/photo-2.jpg" width="160" height="160" alt="Фото Эрнеста Изиля">
-            </div>
-            <time class="comment-date" datetime="2016-02-01">01.02.2016</time>
-            <h2 class="comment-author">Эрнест Изиль</h2>
-            <p class="comment-text">Я фрилансер, программист, работать дома не могу, так как мешают дети. Здесь нашел то, что давно искал – тишину и спокойствие. Эффективность работы выросла, как и гонорары. Очень удобно, что коворкинг находится недалеко от метро. Стабильный интернет, чистота и порядок вокруг, никто не мешает. Цены сначала показались высокими, но учитывая полученные преимущества, все отлично!</p>
-          </li>
-          <li class="comments-list-item">
-            <div class="comment-avatar">
-              <img photo"comment-avatar" src="img/profile-photos/photo-3.jpg" width="160" height="160" alt="Фото Елены Сургай">
-            </div>
-            <time class="comment-date" datetime="2015-12-22">22.12.2015</time>
-            <h2 class="comment-author">Елена Сургай</h2>
-            <p class="comment-text">Захожу сюда не часто, так как не мой район, но когда бываю в центре, то периодически нужно место для плодотворной работы. Интернет-клубы не подходят, так как не обеспечивают такой уровень сервиса, как Воркадиум. Здесь я нахожу вдохновение и могу выделить время для творчества. Желаю Воркадиуму процветания и развития. Если будете открывать филиалы, обратите внимание на Алексеевский район, я буду вашим постоянным клиентом :) </p>
-          </li>
-          <li class="comments-list-item">
-            <div class="comment-photo">
-              <img src="img/profile-photos/photo-4.jpg" width="160" height="160" alt="Фото Натальи Осадчей">
-            </div>
-            <time class="comment-date" datetime="2015-08-14">14.08.2015</time>
-            <h2 class="comment-author">Наталья Осадчая</h2>
-            <p class="comment-text">Провожу здесь встречи с клиентами в неформальной обстановке. Удобно, что при необходимости все под рукой – и ксерокс, и принтер и магазин канцелярии. Заключаю здесь свои лучшие договора. Единственное пожелание – сделайте еще несколько переговорных комнат на 10-15 человек, а то они пользуются большим спросом и не всегда есть возможность забронировать.</p>
-          </li>
-        </ul>
-        <nav class="pagination">
-          <p class="page-info">Страница 1 из 7</p>
-          <p class="visually-hidden">Перейти на страницу:</p>
-          <ul class="pagination-list">
-            <li><a class="active" href="">1</a></li>  
-            <li><a href="#2">2</a></li>
-            <li><a href="#3">3</a></li>
-            <li><a href="#4">4</a></li>
-            <li><a href="#5">5</a></li>
-            <li><a href="#6">6</a></li>
-            <li><a href="#7">7</a></li>
+    <div class="page-wrapper  clearfix">
+      <h2 class="visually-hidden">Страница отзывов</h1>
+      <aside class="sidebar">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link  navigation__link--icon-main" href="main.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link  navigation__link--icon-tariffs" href="prices.html">Тарифы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link  navigation__link--active  navigation__link--icon-reviews  navigation__link--icon-reviews-active" href="comments.html">Отзывы</a>
+            </li>
+          </ul>
+        </nav> 
+      </aside>
+      <main class="main-content">
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html"><span>Главная</span></a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link  breadcrumbs__link--active" class="active">Отзывы</a></li>
           </ul>
         </nav>
-        <form class="add-comment-form" action="#" method="post">
-          <fieldset>
-            <legend class="form-legend">Оставить отзыв</legend>
-            <p>
-              <label for="name">Ваше имя</label>
-              <input type="text" name="name" id="name">
-            </p>
-            <p>
-              <label for="url-vk">Ссылка на профиль VK</label>
-              <input type="text" mame="url-vk" id="url-vk">
-            </p>
-            <label for="text">Текст отзыва
-              <textarea name="text" id="text">
-              </textarea>
-            </label>
-            <p>Отображать фото в отзыве?</p>
-            <p>
-              <label><input type="radio" name="photo" value="yes" checked>Да</label>       
-              <label><input type="radio" name="photo" value="no">Нет</label>
-            </p>
-            <p>
+        <section class="comments">
+          <h1 class="comments__title">Отзывы</h1>
+          <ul class="comments__list">
+            <li class="comments__item  clearfix">
+              <div class="comment__photo">
+                <img src="img/profile-photos/photo-1.jpg" alt="Фото Олега Павлова">              
+              </div>
+              <div class="comment__content">
+                <time class="comment__date" datetime="2016-10-12">12.10.2016</time>
+                <h2 class="comment__author">Олег Павлов</h2>
+                <p class="comment__text">Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим совещания директоров. Получается намного дешевле и удобно всем добираться. Единственное пожелание – расширить меню, потому что бизнес-ланчи – это все таки средний уровень, а хочется чего то более вкусного, чтобы можно было угощать начальство.</p>
+              </div>
+            </li>
+            <li class="comments__item clearfix">
+              <div class="comment__photo">
+                <img src="img/profile-photos/photo-2.jpg" width="160" height="160" alt="Фото Эрнеста Изиля">
+              </div>
+              <div class="comment__content">
+                <time class="comment__date" datetime="2016-02-01">01.02.2016</time>
+                <h2 class="comment__author">Эрнест Изиль</h2>
+                <p class="comment__text">Я фрилансер, программист, работать дома не могу, так как мешают дети. Здесь нашел то, что давно искал – тишину и спокойствие. Эффективность работы выросла, как и гонорары. Очень удобно, что коворкинг находится недалеко от метро. Стабильный интернет, чистота и порядок вокруг, никто не мешает. Цены сначала показались высокими, но учитывая полученные преимущества, все отлично!</p>
+              </div>
+            </li>
+            <li class="comments__item clearfix">
+              <div class="comment__photo">              
+              </div>
+              <div class="comment__content">
+                <time class="comment__date" datetime="2015-12-22">22.12.2015</time>
+                <h2 class="comment__author">Елена Сургай</h2>
+                <p class="comment__text">Захожу сюда не часто, так как не мой район, но когда бываю в центре, то периодически нужно место для плодотворной работы. Интернет-клубы не подходят, так как не обеспечивают такой уровень сервиса, как Воркадиум. Здесь я нахожу вдохновение и могу выделить время для творчества. Желаю Воркадиуму процветания и развития. Если будете открывать филиалы, обратите внимание на Алексеевский район, я буду вашим постоянным клиентом :) </p>
+              </div>
+            </li>
+            <li class="comments__item clearfix">
+              <div class="comment__photo">
+                <img src="img/profile-photos/photo-4.jpg" width="160" height="160" alt="Фото Натальи Осадчей">
+              </div>
+              <div class="comment__content">
+                <time class="comment__date" datetime="2015-08-14">14.08.2015</time>
+                <h2 class="comment__author">Наталья Осадчая</h2>
+                <p class="comment__text">Провожу здесь встречи с клиентами в неформальной обстановке. Удобно, что при необходимости все под рукой – и ксерокс, и принтер и магазин канцелярии. Заключаю здесь свои лучшие договора. Единственное пожелание – сделайте еще несколько переговорных комнат на 10-15 человек, а то они пользуются большим спросом и не всегда есть возможность забронировать.</p>
+              </div>
+            </li>
+          </ul>
+          <nav class="pagination clearfix">
+            <p class="pagination__info">Страница 1 из 7</p>
+            <p class="visually-hidden">Перейти на страницу:</p>
+            <ul class="pagination__list">
+              <li class="pagination__item"><span class="visually-hidden">Предыдущая страница</span><a class="pagination__link  pagination__link--previous" href=""></a></li>
+              <li class="pagination__item"><a class="pagination__link  pagination__link--active">1</a></li>  
+              <li class="pagination__item"><a class="pagination__link" href="#2">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#3">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#4">4</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#5">5</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#6">6</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#7">7</a></li>
+              <li class="pagination__item"><span class="visually-hidden">Следующая страница</span><a class="pagination__link  pagination__link--next" href="#"></a></li>
+            </ul>
+          </nav>
+          <form class="comments__form  form" action="#" method="post">
+            <fieldset>
+              <legend class="form__legend">Оставить отзыв</legend>
+              <p>
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" id="name">
+              </p>
+              <p>
+                <label for="url-vk">Ссылка на профиль VK</label>
+                <input type="text" mame="url-vk" id="url-vk">
+              </p>
+              <p>
+                <label for="text">Текст отзыва</label>
+                  <textarea name="text" id="text">
+                  </textarea>              
+              </p>           
+              <div class="form__toggle">
+                <p>Отображать фото в отзыве?</p>
+                <input type="radio" id="yes" name="photo" value="yes" checked>
+                <label for="yes">Да</label>
+                <input type="radio" id="no" name="photo" value="no">       
+                <label for="no">Нет</label>
+              </div>            
               <button type="submit">Отправить</button>
-            </p>
-          </fieldset>
-        </form>
-      </section>           
-    </main>
-    <footer class="main-footer">
-      <div class="container clearfix">
-        <div class="footer-copyright">
+              
+            </fieldset>
+          </form>
+        </section>          
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer-wrapper clearfix">
+        <div class="footer__copyright">
           <p>Сделано с любовью и старанием<br> на курсе «HTML + CSS» в <a href="#">LoftSchool</a>. Автор работы: <span>Демихов Родион</span> </p>
         </div>
-        <img class="main-logo" src="img/main-logo.png" width="99" height="51" alt="Коворкинг «Воркадиум»">
-        <div class="footer-social">
-          <p class="footer-social-title">Наши социальные сети</p>
-          <ul class="footer-social-list">
-            <li>
-              <a class="" href="#"><span class="visually-hidden">Вконтакте,</span></a>
+        <a class="footer__logo  logo" href="#"><img src="img/main-logo.png" alt="Коворкинг «Воркадиум»"></a>
+        <div class="footer__social">
+          <p class="footer__social-title">Наши социальные сети</p>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="social-link social-link--vk" href="#"><span class="visually-hidden">Вконтакте,</span></a>
             </li>
-            <li>
-              <a class="" href="#"><span class="visually-hidden">Facebook,</span></a>
+            <li class="footer__social-item">
+              <a class="social-link social-link--fb" href="#"><span class="visually-hidden">Facebook,</span></a>
             </li>
-            <li>
-              <a class="" href="#"><span class="visually-hidden">Google Plus,</span></a>
+            <li class="footer__social-item">
+              <a class="social-link social-link--gp" href="#"><span class="visually-hidden">Google Plus,</span></a>
             </li>
-            <li>
-              <a class="" href="#"><span class="visually-hidden">Twitter,</span></a>
+            <li class="footer__social-item">
+              <a class="social-link social-link--tw" href="#"><span class="visually-hidden">Twitter,</span></a>
             </li>
-            <li>
-              <a class="" href="mailto:#"><span class="visually-hidden">E-mail</span></a>
+            <li class="footer__social-item">
+              <a class="social-link social-link--mail" href="mailto:#"><span class="visually-hidden">E-mail</span></a>
             </li>
           </ul>
         </div>

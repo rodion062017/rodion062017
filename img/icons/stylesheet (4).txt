@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -20px;
+}
+
+.sprite-facebook-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -80px;
+}
+
+.sprite-google {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -140px;
+}
+
+.sprite-google-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -200px;
+}
+
+.sprite-mail {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -260px;
+}
+
+.sprite-mail-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -320px;
+}
+
+.sprite-nav-feed {
+    width: 21px;
+    height: 19px;
+    background-position: -20px -380px;
+}
+
+.sprite-nav-feed-active {
+    width: 21px;
+    height: 19px;
+    background-position: -20px -439px;
+}
+
+.sprite-nav-main {
+    width: 17px;
+    height: 15px;
+    background-position: -20px -498px;
+}
+
+.sprite-nav-main-active {
+    width: 17px;
+    height: 15px;
+    background-position: -20px -553px;
+}
+
+.sprite-nav-wallet {
+    width: 19px;
+    height: 16px;
+    background-position: -20px -608px;
+}
+
+.sprite-nav-wallet-active {
+    width: 19px;
+    height: 16px;
+    background-position: -20px -664px;
+}
+
+.sprite-twitter {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -720px;
+}
+
+.sprite-twitter-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -780px;
+}
+
+.sprite-vk {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -840px;
+}
+
+.sprite-vk-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -20px -900px;
+}
