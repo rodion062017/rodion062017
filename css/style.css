@@ -112,7 +112,8 @@ html {
   border: 3px solid #ec1e79;
 }
 
-.intro-main__btn-intro:hover {
+.intro-main__btn-intro:hover,
+.intro-main__btn-intro:focus {
   color: #ffffff;
 
   background-color: #ec1e79;
@@ -144,11 +145,12 @@ html {
   height: 51px;
 }
 
-.logo:hover {
+.logo:hover,
+.logo:focus {
   opacity: 0.7;
 }
 
-.logo:active {
+.logo:active  {
   opacity: 0.5;
 }
 
@@ -178,7 +180,8 @@ html {
   text-decoration: none;
 }
 
-.contacts__phone:hover {
+.contacts__phone:hover,
+.contacts__phone:focus {
   text-decoration: underline;
 }
 
@@ -203,7 +206,8 @@ html {
   cursor: pointer;
 }
 
-.contacts__schedule:hover {
+.contacts__schedule:hover,
+.contacts__shedule:focus {
   color: #5dd1f8;
 
   opacity: 0.7;
@@ -243,7 +247,8 @@ html {
   transform: rotate(-45deg);
 }
 
-.contacts__schedule:hover ~ .contacts__schedule-hover {
+.contacts__schedule:hover ~ .contacts__schedule-hover,
+.contacts__schedule:focus ~ .contacts__schedule-hover {
   display: block;
 }
 
@@ -306,7 +311,8 @@ html {
   letter-spacing: 1px;
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link:focus {
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -504,7 +510,8 @@ html {
   filter: grayscale(100%);
 }
 
-.partners__link:hover {
+.partners__link:hover,
+.partners__link:focus {
   filter: grayscale(0%);
 }
 
@@ -516,6 +523,169 @@ html {
 .partners__item:nth-child(1) img {
   margin: 9.5px 0;
 }
+
+/*STYLES FOR TARIFFS.HTML*/
+
+
+.tariffs {
+  float: right;
+  width: 900px;
+}
+
+.tariffs__title {
+  margin: 0
+  margin-bottom: 45px;
+  margin-left: -2px;
+  padding-left: 20px;
+
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Gotham", Arial, sans-serif;
+  letter-spacing: -1.2px;
+}
+
+.tariffs__list {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.tariffs__item {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 290px;
+  min-height: 400px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  padding: 0 20px;
+
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  text-align: center;
+
+  border-radius: 3px;
+}
+
+.tariffs__item:hover {
+  box-shadow: 0px 0 25px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tariffs__item:hover .tariffs__item-link,
+.tariffs__item:hover .tariffs__item-link span {
+  text-decoration: underline;
+}
+
+.tariffs__item:nth-child(3n+2) {
+  margin-right: 10px;
+}
+
+.tariffs__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.tariffs__item-title {
+  position: relative;
+
+  box-sizing: border-box;
+  min-width: 250px;
+  min-height: 153px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  padding: 61px 25px 29px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  font-family: "Gotham", Arial, sans-serif;
+  text-transform: uppercase;
+
+  background-color: rgba(39, 39, 62, 1);
+  border-radius: 3px;
+}
+
+.tariffs__item-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 25;
+
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  opacity: 0.15;
+}
+
+.tariffs__item-link {
+  z-index: 100;
+  position: relative;
+  color: #5dd1f8;
+  text-decoration: none;
+}
+
+.tariffs__item-link:focus,
+.tariffs__item-link:focus span {
+  outline: none;
+  text-decoration: underline;
+}
+
+
+.tariffs__item-title span {
+  position: relative;
+  z-index: 100;
+  display: block;
+  margin-top: -39px;
+
+  color: #ec1e79;
+}
+
+.tariffs__item-title--tarif-1::after {
+  background-image: url("../img/tariffs/tarif-1.jpg");
+  background-position: -10px -20px;
+}
+
+.tariffs__item-title--tarif-2::after {
+  background-image: url("../img/tariffs/tarif-2.jpg");
+  background-position: -238px -202px;
+}
+
+.tariffs__item-title--tarif-3::after {
+  background-image: url("../img/tariffs/tarif-3.jpg");
+  background-position: -8px -17px;
+}
+
+.tariffs__item-title--tarif-4::after {
+  background-image: url("../img/tariffs/tarif-4.jpg");
+  background-position: -6px -9px;
+}
+
+.tariffs__item-title--tarif-5::after {
+  background-image: url("../img/tariffs/tarif-5.jpg");
+  background-position: -36px -18px;
+}
+
+.tariffs__item-title--tarif-6::after {
+  background-image: url("../img/tariffs/tarif-6.jpg");
+  background-position: -6px -9px;
+}
+
+.tariffs__item-price {  
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Gotham", Arial, sans-serif;
+}
+
 
 /*STYLES FOR COMMENTS.HTML*/
 
@@ -713,7 +883,8 @@ html {
   border-radius: 3px;
 }
 
-.pagination__link:hover {
+.pagination__link:hover,
+.pagination__link:focus {
   color: #ec1e79;
 }
 
@@ -731,7 +902,8 @@ html {
   background-color: #27273e;
 }
 
-.pagination__link--active:hover {
+.pagination__link--active:hover,
+.pagination__link--active:focus {
   color: #27273e;
 
   background-color: #ec1e79;
@@ -743,7 +915,6 @@ html {
 
   padding: 1px 0 3px 0;
 }
-
 
 .pagination__link--previous::before,
 .pagination__link--previous::after,
@@ -972,7 +1143,8 @@ html {
   cursor: pointer;
 }
 
-.form button:hover {
+.form button:hover,
+.form button:focus: {
   color: #ec1e79;
 
   background-color: #ffffff;
@@ -1084,7 +1256,8 @@ html {
   background-position: -20px -840px;
 }
 
-.social-link--vk:hover {
+.social-link--vk:hover,
+.social-link--vk:focus {
   background-position: -20px -900px;
 }
 
@@ -1092,7 +1265,8 @@ html {
   background-position: -20px -20px;
 }
 
-.social-link--fb:hover {
+.social-link--fb:hover,
+.social-link--fb:focus {
   background-position: -20px -80px;
 }
 
@@ -1100,7 +1274,8 @@ html {
   background-position: -20px -140px;
 }
 
-.social-link--gp:hover {
+.social-link--gp:hover,
+.social-link--gp:focus {
   background-position: -20px -200px;
 }
 
@@ -1108,7 +1283,8 @@ html {
   background-position: -20px -720px;
 }
 
-.social-link--tw:hover {
+.social-link--tw:hover,
+.social-link--tw:focus {
   background-position: -20px -780px;
 }
 
@@ -1116,7 +1292,7 @@ html {
   background-position: -20px -260px;
 }
 
-.social-link--mail:hover {
+.social-link--mail:hover,
+.social-link--mail:focus {
   background-position: -20px -320px;
 }
-
