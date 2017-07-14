@@ -1,0 +1,156 @@
+.header {
+  min-width: 1100px;
+
+  background-color: #27273e;
+}
+
+.header-container {
+  box-sizing: border-box;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 13px 20px 13px;
+}
+
+.header__logo {
+  float: left;
+}
+
+.logo {
+  display: block;
+  width: 99px;
+  height: 51px;
+
+  outline: none;
+
+  transition: opacity 0.2s linear;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.7;
+}
+
+.logo:active {
+  opacity: 0.5;
+}
+
+.header__contacts {
+  float: right;
+  margin-top: 6px;
+}
+
+.contacts {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 0;
+  font-family: "Gotham", Arial, sans-serif;
+  text-align: right;
+  color: #ffffff;
+}
+
+.contacts__phone {
+  display: block;
+  margin-right: -1px;
+  margin-bottom: 5px;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+
+  outline: none;
+
+  transition: opacity 0.2s linear;
+}
+
+.contacts__phone:hover,
+.contacts__phone:focus {
+  text-decoration: underline;
+}
+
+.contacts__phone:active {
+  opacity: 0.5;
+}
+
+.contacts__schedule {
+  position: relative;
+
+  display: inline-block;
+  margin: 0;
+  margin-right: 2px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #ec1e79;
+  text-decoration: underline;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: color 0.2s linear;
+}
+
+.contacts__schedule:hover,
+.contacts__shedule:focus {
+  color: #5dd1f8;
+
+  opacity: 0.7;
+}
+
+.contacts__schedule-hover {
+  position: absolute;
+  top: 63px;
+  right: 0;
+
+  padding: 13px 10px 16px 11px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ec1e79;
+
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
+  opacity: 0;
+
+  transition: opacity 0.2s linear;
+}
+
+.contacts__schedule-hover::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 2px;
+
+  width: 0;
+  height: 0;
+
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff #ffffff transparent transparent;
+  border-radius: 0 3px 5px 0;
+  box-shadow: 4px -4px 10px -4px rgba(23,59,117,0.55);
+  transform: rotate(-45deg);
+}
+
+.contacts__schedule:hover ~ .contacts__schedule-hover,
+.contacts__schedule:focus ~ .contacts__schedule-hover {
+  opacity: 1;
+}
+
+.contacts__work-hours {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.contacts__lunch-hours {
+  margin: 0;
+
+  font-weight: 300;
+  font-family: "Gotham", Arial, sans-serif;
+  text-align: left;
+  color: #221f1f;
+}

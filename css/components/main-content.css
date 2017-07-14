@@ -1,0 +1,120 @@
+.wrapper {
+  min-height: 100%;
+}
+
+.page-wrapper {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-wrapper::after {
+  content: "";
+
+  display: block;
+  height: 77px;
+}
+
+.sidebar {
+  float: left;
+  width: 160px;
+  padding-top: 49px;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.navigation__item {
+  margin-bottom: 37px;
+  padding-left: 37px;
+
+  font-size: 0;
+}
+
+.navigation__link {
+  position: relative;
+
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Gotham", Arial, sans-serif;
+  color: #ec1e79;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  outline: none;
+
+  transition: color 0.2s linear;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation__link:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation__link--active {
+  color: rgba(0, 0, 0, 1);;
+}
+
+.navigation__link::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -37px;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: transparent;
+  background-image: url("../../img/icons/spritesheet-1.png");
+  background-repeat: no-repeat;
+}
+
+.navigation__link--icon-main::before {
+  background-position: -20px -498px;
+}
+
+.navigation__item:hover .navigation__link--icon-main::before,
+.navigation__item:focus .navigation__link--icon-main::before,
+.navigation__link--icon-main-active::before {
+  background-position: -20px -553px;
+}
+
+.navigation__link--icon-tariffs::before {
+  background-position: -20px -608px;
+}
+
+.navigation__item:hover .navigation__link--icon-tariffs::before,
+.navigation__item:focus .navigation__link--icon-tariffs::before,
+.navigation__link--icon-tariffs-active::before {
+  background-position: -20px -664px;
+}
+
+.navigation__link--icon-reviews::before {
+  top: -5px;
+  left: -38px;
+
+  background-position: -20px -380px;
+}
+
+.navigation__item:hover .navigation__link--icon-reviews::before,
+.navigation__item:focus .navigation__link--icon-reviews::before,
+.navigation__link--icon-reviews-active::before {
+  background-position: -20px -439px;
+}
+
+.main-content {
+  float: right;
+  width: 880px;
+}

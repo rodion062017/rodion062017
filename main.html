@@ -7,86 +7,88 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>    
-    <header class="header">
-      <div class="header-wrapper  clearfix">
-        <a class="header__logo  logo" href="#"><img src="img/main-logo.png" alt="Коворкинг «Воркадиум»"></a>
-        <div class="header__contacts  contacts">
-          <a class="contacts__phone" href="tel:88000039210">8 (800) 00-392-10</a>          
-          <p class="contacts__schedule">График работы</p>
-          <div class="contacts__schedule-hover">
-            <p class="contacts__work-hours">пн-вс: 09:00-20:00</p>
-            <p class="contacts__lunch-hours">обед: 14:00-14:30</p>           
+  <body>
+    <div class="wrapper">    
+      <header class="header">
+        <div class="header-container  clearfix">
+          <a class="header__logo  logo" href="index.html"><img src="img/main-logo.png" alt="Коворкинг «Воркадиум»"></a>
+          <div class="header__contacts  contacts">
+            <a class="contacts__phone" href="tel:88000039210">8 (800) 00-392-10</a>          
+            <p class="contacts__schedule" tabindex="0">График работы</p>
+            <div class="contacts__schedule-hover">
+              <p class="contacts__work-hours">пн-вс: 09:00-20:00</p>
+              <p class="contacts__lunch-hours">обед: 14:00-14:30</p>           
+            </div>
           </div>
         </div>
+      </header>    
+      <div class="page-wrapper  clearfix">
+        <h1 class="visually-hidden">Главная страница сайта</h1>
+        <aside class="sidebar">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link  navigation__link--active  navigation__link--icon-main  navigation__link--icon-main-active" href="main.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link  navigation__link--icon-tariffs" href="prices.html">Тарифы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link  navigation__link--icon-reviews" href="comments.html">Отзывы</a>
+              </li>
+            </ul>
+          </nav> 
+        </aside>
+        <main class="main-content">  
+          <section class="info">
+            <h2 class="info__title">О компании</h2>
+            <p>Чтобы работать в дружелюбной и уютной атмосфере, не обязательно снимать офис за баснословные суммы. Обратитесь в наш коворкинг «Воркадиум» и оцените преимущества сотрудничества.</p>
+            <h3>Что мы предлагаем:</h3>
+            <ul>
+              <li>Огромный конференц-зал на 120 человек для проведения массовых переговоров, праздников, совещаний.</li>
+              <li>Средний конференц-зал на 40 человек.</li>
+              <li>Уютный зал с круглым столом для совещаний на 12 человек </li>
+              <li>Пространство для совместной работы. Несколько вариантов – от уютных небольших кабинетов с панорамными окнами и стильных офисов на несколько человек до творческих комнат в стиле лофт с высокими потолками, без привычных атрибутов офиса.</li>
+              <li>Большая библиотека с классической и специальной литературой.</li>
+              <li>Магазин канцелярии.</li>
+              <li>Компьютерный зал.</li>
+              <li>Зал для неформальных встреч с баром и кальяном.</li>
+            </ul>
+            <p>Возможность комфортно работать и с удобством организовывать бизнес встречи – это базовая потребность современного делового человека. В уютных залах «Воркадиум» есть все, что нужно для ведения дел – переговорные столы, тумбы и шкафы для хранения документов, компьютерная техника, а также уютный ресторан для дружеских встреч.</p>
+            <p class="info__highlighted">Для наших новых клиентов мы предлагаем <span class="info__discount">скидку 50%</span> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
+          </section>
+          <section class="partners">
+            <h2 class="partners__title">Партнёры</h2>
+            <ul class="partners__list">
+              <li class="partners__item">
+                <a class="partners__link" href="#"><img src="img/partners/partner-1.png" width="160" height="41" alt="Винтер канцелярия"></a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#"><img src="img/partners/partner-2.png" width="123" height="62" alt="Drop"></a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#"><img src="img/partners/partner-3.png" width="130" height="62" alt="Библиотека «Анна Ахматова»"></a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#"><img src="img/partners/partner-4.png" width="160" height="62" alt="Тишкин"></a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#"><img src="img/partners/partner-5.png" width="137" height="62" alt="Пуфок"></a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#"><img src="img/partners/partner-6.png" width="51" height="62" alt="Авантаж"></a>
+              </li>
+            </ul>
+          </section> 
+        </main>
       </div>
-    </header>    
-    <div class="page-wrapper  clearfix">
-      <h1 class="visually-hidden">Главная страница сайта</h1>
-      <aside class="sidebar">
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link  navigation__link--active  navigation__link--icon-main  navigation__link--icon-main-active" href="main.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link  navigation__link--icon-tariffs" href="prices.html">Тарифы</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link  navigation__link--icon-reviews" href="comments.html">Отзывы</a>
-            </li>
-          </ul>
-        </nav> 
-      </aside>
-      <main class="main-content">  
-        <section class="info">
-          <h2 class="info__title">О компании</h2>
-          <p>Чтобы работать в дружелюбной и уютной атмосфере, не обязательно снимать офис за баснословные суммы. Обратитесь в наш коворкинг «Воркадиум» и оцените преимущества сотрудничества.</p>
-          <p>Что мы предлагаем:</p>
-          <ul>
-            <li>Огромный конференц-зал на 120 человек для проведения массовых переговоров, праздников, совещаний.</li>
-            <li>Средний конференц-зал на 40 человек.</li>
-            <li>Уютный зал с круглым столом для совещаний на 12 человек </li>
-            <li>Пространство для совместной работы. Несколько вариантов – от уютных небольших кабинетов с панорамными окнами и стильных офисов на несколько человек до творческих комнат в стиле лофт с высокими потолками, без привычных атрибутов офиса.</li>
-            <li>Большая библиотека с классической и специальной литературой.</li>
-            <li>Магазин канцелярии.</li>
-            <li>Компьютерный зал.</li>
-            <li>Зал для неформальных встреч с баром и кальяном.</li>
-          </ul>
-          <p>Возможность комфортно работать и с удобством организовывать бизнес встречи – это базовая потребность современного делового человека. В уютных залах «Воркадиум» есть все, что нужно для ведения дел – переговорные столы, тумбы и шкафы для хранения документов, компьютерная техника, а также уютный ресторан для дружеских встреч.</p>
-          <p class="info__highlighted">Для наших новых клиентов мы предлагаем <span class="info__discount">скидку 50%</span> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
-        </section>
-        <section class="partners">
-          <h2 class="partners__title">Партнёры</h2>
-          <ul class="partners__list">
-            <li class="partners__item">
-              <a class="partners__link" href="#"><img src="img/partners/partner-1.png" width="160" height="41" alt="Винтер канцелярия"></a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="#"><img src="img/partners/partner-2.png" width="123" height="62" alt="Drop"></a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="#"><img src="img/partners/partner-3.png" width="130" height="62" alt="Библиотека «Анна Ахматова»"></a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="#"><img src="img/partners/partner-4.png" width="160" height="62" alt="Тишкин"></a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="#"><img src="img/partners/partner-5.png" width="137" height="62" alt="Пуфок"></a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="#"><img src="img/partners/partner-6.png" width="51" height="62" alt="Авантаж"></a>
-            </li>
-          </ul>
-        </section> 
-      </main>
     </div>
     <footer class="footer">
-      <div class="footer-wrapper clearfix">
+      <div class="footer-container clearfix">
         <div class="footer__copyright">
           <p>Сделано с любовью и старанием<br> на курсе «HTML + CSS» в <a href="#">LoftSchool</a>. Автор работы: <span>Демихов Родион</span> </p>
         </div>
-        <a class="footer__logo  logo" href="#"><img src="img/main-logo.png" alt="Коворкинг «Воркадиум»"></a>
+        <a class="footer__logo  logo" href="index.html"><img src="img/main-logo.png" alt="Коворкинг «Воркадиум»"></a>
         <div class="footer__social">
           <p class="footer__social-title">Наши социальные сети</p>
           <ul class="footer__social-list">
