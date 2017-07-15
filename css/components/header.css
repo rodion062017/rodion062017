@@ -146,13 +146,13 @@
 .contacts__schedule-hover::after {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -25px;
   right: 0;
   left: 0;
   z-index: 10;
 
   display: block;
-  height: 20px;
+  height: 25px;
 }
 
 .contacts__schedule:hover .contacts__schedule-hover,
