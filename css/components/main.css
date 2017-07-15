@@ -20,8 +20,11 @@
   background-repeat: no-repeat;
 }
 
+.info-wrapper {
+  padding-right: 180px;
+}
+
 .info p {
-  width: 700px;
   margin: 0;
 
   font-weight: 300px;
@@ -41,7 +44,6 @@
 
 
 .info ul {
-  width: 700px;
   margin: 0;
   padding: 0;
 
@@ -133,7 +135,7 @@
   outline: none;
   filter: grayscale(100%);
 
-  transition: filter 0.25s linear;
+  transition: filter 0.3s linear;
 }
 
 .partners__link:hover,

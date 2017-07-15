@@ -4,7 +4,8 @@
 }
 
 .tariffs__title {
-  margin: 0
+  margin: 0;
+  margin-top: 12px;
   margin-bottom: 45px;
   margin-left: -2px;
   padding-left: 20px;
@@ -49,7 +50,7 @@
 }
 
 .tariffs__item:hover .tariffs__item-link,
-.tariffs__item:hover .tariffs__item-link span {
+.tariffs__item:hover .tariffs__item-link .tariffs__vip {
   text-decoration: underline;
 }
 
@@ -61,15 +62,28 @@
   margin-right: 0;
 }
 
-.tariffs__item-title {
+.tariffs__title-wrapper {
   position: relative;
 
   box-sizing: border-box;
   min-width: 250px;
   min-height: 153px;
-  margin: 0 auto;
-  margin-bottom: 23px;
-  padding: 61px 25px 29px;
+  margin-bottom: 22px;
+  overflow: hidden;
+
+  background-color: blue;
+  background-color: rgba(39, 39, 62, 1);
+  border-radius: 3px;
+}
+
+.tariffs__item-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+
+  width: 180px;
+  margin: 0;
 
   font-weight: 700;
   font-size: 24px;
@@ -77,22 +91,7 @@
   font-family: "Gotham", Arial, sans-serif;
   text-transform: uppercase;
 
-  background-color: rgba(39, 39, 62, 1);
-  border-radius: 3px;
-}
-
-.tariffs__item-title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 25;
-
-  width: 100%;
-  height: 100%;
-
-  background-repeat: no-repeat;
-  opacity: 0.15;
+  transform: translate(-50%,-50%);
 }
 
 .tariffs__item-link {
@@ -104,51 +103,58 @@
 }
 
 .tariffs__item-link:focus,
-.tariffs__item-link:focus span {
+.tariffs__item-link:focus .tariffs__vip {
   text-decoration: underline;
 
   outline: none;
 }
 
-
-.tariffs__item-title span {
+.tariffs__vip {
   position: relative;
   z-index: 100;
 
   display: block;
-  margin-top: -39px;
 
   color: #ec1e79;
 }
 
-.tariffs__item-title--tarif-1::after {
-  background-image: url("../../img/tariffs/tarif-1.jpg");
-  background-position: -10px -20px;
+.tariffs__img {
+  position: absolute;
+  z-index: 10;
+
+  display: block;
+
+  opacity: 0.15;
 }
 
-.tariffs__item-title--tarif-2::after {
-  background-image: url("../../img/tariffs/tarif-2.jpg");
-  background-position: -238px -202px;
+.tariffs__img--first {
+  top: -20px;
+  left: -10px;
 }
 
-.tariffs__item-title--tarif-3::after {
-  background-image: url("../../img/tariffs/tarif-3.jpg");
-  background-position: -8px -17px;
+.tariffs__img--second {
+  top: -202px;
+  left: -238px;
 }
 
-.tariffs__item-title--tarif-4::after {
-  background-image: url("../../img/tariffs/tarif-4.jpg");
-  background-position: -6px -9px;
+.tariffs__img--third {
+  top: -17px;
+  left: -8px;
 }
 
-.tariffs__item-title--tarif-5::after {
-  background-image: url("../../img/tariffs/tarif-5.jpg");
-  background-position: -36px -18px;
+.tariffs__img--fourth {
+  top: -9px;
+  left: -6px;
 }
 
-.tariffs__item-title--tarif-6::after {
-  background-image: url("../../img/tariffs/tarif-6.jpg");
-  background-position: -6px -9px;
+.tariffs__img--fifth {
+  top: -18px;
+  left: -36px;
+}
+
+.tariffs__img--sixth {
+  top: -9px;
+  left: -6px;
 }
 
 .tariffs__item-price {
@@ -163,6 +169,8 @@
 }
 
 .tariffs__item-info {
+  margin: 0;
+
   font-size: 14px;
   line-height: 21px;
   font-family: "Gotham", Arial, sans-serif;
